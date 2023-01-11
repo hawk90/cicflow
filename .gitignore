@@ -2,3 +2,5 @@
 build
 # Ignore Vim files
 *.swp
+# Ignore clangd
+.cache
