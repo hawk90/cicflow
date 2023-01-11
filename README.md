@@ -10,10 +10,13 @@
   - [ ] optimization_test.h
   - [x] port.h  
   - [x] macros.h  
-  - [ ] log_severity.h  
-
+  - [x] log_severity.h
+  - [x] log_severity.c
+  - [x] log_severity_test.c
+  - [x] internal/errno_saver.h
   - [ ] internal/atomic_hook.h
-  - [ ] internal/errno_saver.h
+  - [ ] internal/unaligned_access.h
+  - [ ] internal/endian.h
   - [ ] internal/raw_logging.h
   - [ ] internal/raw_logging.c
 
@@ -26,7 +29,6 @@
   - [ ] internal/cycleclock_config.h
   - [ ] internal/direct_mmap.h
   - [ ] internal/dynamic_annotations.h
-  - [ ] internal/endian.h
   - [ ] internal/fast_type_id.h
   - [ ] internal/hide_ptr.h
   - [ ] internal/identity.h
@@ -37,7 +39,6 @@
   - [ ] internal/low_level_scheduling.h
   - [ ] internal/per_thread_tls.h
   - [ ] internal/prefetch.h
-  - [ ] internal/pretty_function.h
   - [ ] internal/scheduling_mode.h
   - [ ] internal/scoped_set_env.h
   - [ ] internal/scoped_set_env.c
@@ -60,10 +61,10 @@
   - [ ] internal/throw_delegate.h
   - [ ] internal/throw_delegate.c
   - [ ] internal/tsan_mutex_interface.h
-  - [ ] internal/unaligned_access.h
   - [ ] internal/unscaledcycleclock.h
   - [ ] internal/unscaledcycleclock.c
   - [ ] internal/unscaledcycleclock_config.h
+  - [ ] internal/pretty_function.h  // does not support in C.
 
 
 2. debugging
@@ -77,6 +78,10 @@
 6. hash
 
 ## Task 2. packet
+
+- - - -
+# Unit Test Frameworks
+check, cmoka, unity
 
 - - - -
 # Project Convention
