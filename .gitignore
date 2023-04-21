@@ -6,3 +6,6 @@ build
 
 # Ignore clangd
 .cache
+
+#
+.DS_Store
