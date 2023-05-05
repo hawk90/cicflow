@@ -25,14 +25,16 @@ if(POLICY CMP0091)
   cmake_policy(SET CMP0091 NEW)
 endif(POLICY CMP0091)
 
+########################################################################################################################
 project(
   cicflow
   VERSION 0.1.0
   LANGUAGES C)
-include(CTest)
 
+########################################################################################################################
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+########################################################################################################################
 # /bin directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
@@ -42,4 +44,5 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/CMake)
 # include current path
 list(APPEND CIC_COMMON_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR})
 
+########################################################################################################################
 add_subdirectory(cicflow)
