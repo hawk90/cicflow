@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 # Compiler id for Apple Clang is now AppleClang.
 if(POLICY CMP0025)
@@ -25,24 +25,50 @@ if(POLICY CMP0091)
   cmake_policy(SET CMP0091 NEW)
 endif(POLICY CMP0091)
 
-########################################################################################################################
+# ##############################################################################
+#
 project(
   cicflow
   VERSION 0.1.0
   LANGUAGES C)
+include(CTest)
 
-########################################################################################################################
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+# ##############################################################################
+#
+option(CMAKE_EXPORT_COMPILE_COMMANDS OFF)
 
-########################################################################################################################
-# /bin directory
+# ##############################################################################
+#
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+# ##############################################################################
 #
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/CMake)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
+# ##############################################################################
+#
 # include current path
 list(APPEND CIC_COMMON_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR})
 
-########################################################################################################################
+# ##############################################################################
+#
+find_package(Threads REQUIRED)
+
+option(BUILD_TESTING "If ON, buil all of own tests" OFF)
+option(FIND_UNITY "will use find_packege(unity)" OFF)
+
+# ##############################################################################
 add_subdirectory(cicflow)
+
+if(BUILD_TESTING)
+  if(FIND_UNITY)
+    find_package(unity REQUIRED)
+  else()
+    set(unity_build_dir ${CMAKE_BINARY_DIR}/unity-build)
+    set(unity_download_url
+        "https://github.com/ThrowTheSwitch/Unity/archive/refs/tags/v2.5.2.zip")
+    set(unity_src_dir ${CMAKE_BINARY_DIR}/unity-src)
+    include(cmake/unity/download.cmake)
+  endif()
+  add_subdirectory(test)
+endif()
