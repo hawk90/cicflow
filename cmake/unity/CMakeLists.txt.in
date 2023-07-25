@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(unity-external NONE)
+
+include(ExternalProject)
+ExternalProject_Add(
+  unity
+  URL "${unity_download_url}" # May be empty
+  SOURCE_DIR "${unity_src_dir}"
+  BINARY_DIR "${unity_build_dir}"
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND ""
+  INSTALL_COMMAND ""
+  TEST_COMMAND "")

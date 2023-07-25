@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/hawk/Workspaces/cicflowmeter-c/build/cicflow/base",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/hawk/Workspaces/cicflowmeter-c  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/log_severity.dir/log_severity.c.o -c /Users/hawk/Workspaces/cicflowmeter-c/cicflow/base/log_severity.c",
+  "file": "/Users/hawk/Workspaces/cicflowmeter-c/cicflow/base/log_severity.c",
+  "output": "cicflow/base/CMakeFiles/log_severity.dir/log_severity.c.o"
+},
+{
+  "directory": "/Users/hawk/Workspaces/cicflowmeter-c/build/cicflow/base",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/hawk/Workspaces/cicflowmeter-c  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/raw_logging_internal.dir/internal/raw_logging.c.o -c /Users/hawk/Workspaces/cicflowmeter-c/cicflow/base/internal/raw_logging.c",
+  "file": "/Users/hawk/Workspaces/cicflowmeter-c/cicflow/base/internal/raw_logging.c",
+  "output": "cicflow/base/CMakeFiles/raw_logging_internal.dir/internal/raw_logging.c.o"
+},
+{
+  "directory": "/Users/hawk/Workspaces/cicflowmeter-c/build/unity-build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/hawk/Workspaces/cicflowmeter-c/build/unity-src/src -I/Users/hawk/Workspaces/cicflowmeter-c/build/unity-build -std=c11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/unity.dir/src/unity.c.o -c /Users/hawk/Workspaces/cicflowmeter-c/build/unity-src/src/unity.c",
+  "file": "/Users/hawk/Workspaces/cicflowmeter-c/build/unity-src/src/unity.c",
+  "output": "unity-build/CMakeFiles/unity.dir/src/unity.c.o"
+},
+{
+  "directory": "/Users/hawk/Workspaces/cicflowmeter-c/build/test/base",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/hawk/Workspaces/cicflowmeter-c -I/Users/hawk/Workspaces/cicflowmeter-c/build/unity-src/src -I/Users/hawk/Workspaces/cicflowmeter-c/build/unity-build  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/endian_test.dir/internal/endian_test.c.o -c /Users/hawk/Workspaces/cicflowmeter-c/test/base/internal/endian_test.c",
+  "file": "/Users/hawk/Workspaces/cicflowmeter-c/test/base/internal/endian_test.c",
+  "output": "test/base/CMakeFiles/endian_test.dir/internal/endian_test.c.o"
+}
+]
